@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text,Image, StyleSheet } from 'react-native';
+import { View, Text,Image, } from 'react-native';
 import { useSelector } from 'react-redux';
+import styles from '../styles/DetailsScreen';
 
 const DetailsScreen = ({ route }) => {
   const { id } = route.params;
@@ -27,27 +28,6 @@ const DetailsScreen = ({ route }) => {
   );
 };
 
-const styles=StyleSheet.create({
-    avatar:{
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-        marginRight: 12,
-    } ,
-  container:{
-   // flex: 1,
-   flexDirection:'row',
-  
-  } ,
-  card: {
-    backgroundColor: 'white',
-   // borderRadius: 8,
-    paddingVertical: 5,
-   // paddingHorizontal: 25,
-    width: '100%',
-    //marginVertical: 10,
-   elevation:10
- },
-})
+
 
 export default DetailsScreen;
